@@ -1,4 +1,4 @@
-/* === Базовый сброс === */
+
 *,
 *::before,
 *::after {
@@ -28,10 +28,10 @@ ul {
     padding: 0;
 }
 
-/* === Хедер === */
+
 .header {
     padding: 30px 93px;
-    /* убрал max-width и max-height — они ломали раскладку */
+    
 }
 
 .header__container {
@@ -39,7 +39,7 @@ ul {
     align-items: center;
     justify-content: space-between;
     gap: 40px;
-    /* убрал max-width: 1200px и padding: 0 20px — конфликтовали с 93px у .header */
+   
 }
 
 .header__logo img {
@@ -106,21 +106,21 @@ ul {
     flex-shrink: 0;
 }
 
-/* === HERO === */
+
 .hero {
     padding-inline: 186px;
-    padding-top: 140px; /* ← 140px от низа хедера до верха hero-контента */
+    padding-top: 140px; 
 }
 
 .hero__container {
     display: flex;
-    align-items: flex-start;      /* лого и контент — по верху */
-    justify-content: space-between; /* контент слева, лого справа */
+    align-items: flex-start;      
+    justify-content: space-between;
     gap: 60px;
-    /* убрал padding-top: 100px — теперь это на .hero */
+   
 }
 
-/* Левая колонка */
+
 .hero__content {
     flex: 1 1 auto;
     max-width: 717px;
@@ -130,29 +130,29 @@ ul {
     margin: 0 0 24px;
     font-size: 54px;
     font-weight: 700;
-    line-height: 1.1;          /* было не задано — строки слипались */
-    letter-spacing: -0.02em;   /* было -8% — в CSS % не работает */
+    line-height: 1.1;          
+    letter-spacing: -0.02em;  
     color: #fff;
 }
 
 .hero__title span {
-    /* EkaterinaHelper — можно другим цветом */
+
 }
 
 .hero__subtitle {
-    margin: 0 0 40px;          /* отступ до кнопок */
+    margin: 0 0 40px;          
     font-weight: 200;
     font-size: 27px;
     line-height: 1.4;
     color: #949494;
 }
 
-/* Кнопки */
+
 .hero__buttons {
     display: flex;
     align-items: center;
     gap: 16px;
-    margin-bottom: 48px;       /* отступ до notes */
+    margin-bottom: 48px;       
 }
 
 .hero__btn {
@@ -160,7 +160,7 @@ ul {
     align-items: center;
     justify-content: center;
 
-    padding: 19px 28px;        /* увеличь боковые отступы */
+    padding: 19px 28px;        
     border-radius: 17px;
 
     font-size: 16px;
@@ -174,7 +174,7 @@ ul {
 .hero__btn--primary {
     background: #997FA8;
     color: #fff;
-    border: 3px solid #997FA8; /* рамка того же цвета — размеры совпадут с secondary */
+    border: 3px solid #997FA8; 
 }
 
 .hero__btn--primary:hover {
@@ -194,7 +194,7 @@ ul {
     border-color: #CFCCED;
 }
 
-/* Notes */
+
 .hero__notes {
     display: flex;
     flex-wrap: nowrap;
@@ -214,29 +214,29 @@ ul {
 }
 
 .hero__note span {
-    color: #b8a4cb; /* вторая часть серым/фиолетовым */
+    color: #b8a4cb; 
 }
 
-/* отступ между пунктами — только между, не вокруг первого */
+
 .hero__note + .hero__note {
     margin-left: 43px;
 }
 
-/* Правая колонка — лого */
+
 .hero__logo {
     flex: 0 0 auto;
-    margin-left: auto;         /* прижимает к правому краю */
-    align-self: flex-start;    /* по верху, как и контент */
-    /* убрал position: absolute — больше не нужен */
+    margin-left: auto;         
+    align-self: flex-start;    
+  
 }
 
 .hero__logo img {
     display: block;
-    width: 480px;              /* подгони под макет */
+    width: 480px;             
     height: auto;
 }
 
-/* === FEATURES === */
+
 .features {
     padding: 100px 186px;
 }
@@ -246,7 +246,7 @@ ul {
     margin: 0 auto;
 }
 
-/* Заголовок */
+
 .features__title {
     margin: 0 0 24px;
 
@@ -259,7 +259,7 @@ ul {
     text-align: center;
 }
 
-/* Подзаголовок */
+
 .features__subtitle {
     max-width: 640px;
     margin: 0 auto 64px;
@@ -272,7 +272,7 @@ ul {
     text-align: center;
 }
 
-/* Сетка карточек */
+
 .features__list {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -283,7 +283,7 @@ ul {
     list-style: none;
 }
 
-/* Карточка */
+
 .features__card {
     display: flex;
     flex-direction: column;
@@ -304,7 +304,7 @@ ul {
     background: #141221;
 }
 
-/* Плашка с иконкой */
+
 .features__icon {
     display: flex;
     align-items: center;
@@ -325,7 +325,7 @@ ul {
     display: block;
 }
 
-/* Заголовок карточки */
+
 .features__card-title {
     margin: 0 0 12px;
 
@@ -336,7 +336,7 @@ ul {
     color: #ffffff;
 }
 
-/* Текст карточки */
+
 .features__card-text {
     margin: 0;
 
@@ -347,7 +347,7 @@ ul {
     color: #8e8e8e;
 }
 
-/* === PRICING === */
+
 .pricing {
     padding: 100px 186px;
 }
@@ -357,7 +357,7 @@ ul {
     margin: 0 auto;
 }
 
-/* Надзаголовок (мелкий серый) */
+
 .pricing__eyebrow {
     margin: 0 0 12px;
 
@@ -369,7 +369,7 @@ ul {
     text-align: center;
 }
 
-/* Основной заголовок */
+
 .pricing__title {
     margin: 0 0 24px;
 
@@ -382,7 +382,7 @@ ul {
     text-align: center;
 }
 
-/* Подзаголовок */
+
 .pricing__subtitle {
     max-width: 640px;
     margin: 0 auto 64px;
@@ -395,7 +395,7 @@ ul {
     text-align: center;
 }
 
-/* Сетка карточек — 3 колонки */
+
 .pricing__list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -406,7 +406,7 @@ ul {
     list-style: none;
 }
 
-/* Карточка */
+
 .pricing__card {
     display: flex;
     flex-direction: column;
@@ -428,7 +428,7 @@ ul {
     background: #141221;
 }
 
-/* "1 месяц (30д)" */
+
 .pricing__period {
     margin: 0 0 24px;
 
@@ -439,7 +439,7 @@ ul {
     color: #e6e6e6;
 }
 
-/* "200 ₽" */
+
 .pricing__price {
     display: flex;
     align-items: flex-start;
@@ -456,7 +456,7 @@ ul {
     color: #ffffff;
 }
 
-/* ₽ — меньше и ниже */
+
 .pricing__currency {
     font-size: 22px;
     font-weight: 400;
@@ -465,7 +465,7 @@ ul {
     color: #ffffff;
 }
 
-/* "30 дней — 200р / 30 дней" */
+
 .pricing__note {
     margin: 0 0 24px;
 
@@ -476,7 +476,7 @@ ul {
     color: #8e8e8e;
 }
 
-/* Кнопка */
+
 .pricing__button {
     display: inline-flex;
     align-items: center;
